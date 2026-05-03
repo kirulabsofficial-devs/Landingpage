@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, ChevronDown, Users, Building2, MessageSquare, FolderKanban } from "lucide-react";
 
 export function Header() {
