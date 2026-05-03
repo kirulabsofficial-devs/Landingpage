@@ -47,7 +47,7 @@ function ScrollRevealText({ text }: { text: string }) {
             key={index}
             className="transition-colors duration-150"
             style={{
-              color: isRevealed ? "var(--foreground)" : "#e4e4e7",
+              color: isRevealed ? "var(--foreground)" : "var(--muted)",
             }}
           >
             {word}{index < words.length - 1 ? " " : ""}
@@ -60,26 +60,26 @@ function ScrollRevealText({ text }: { text: string }) {
 
 const sideImages = [
   {
-    src: "https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1000",
-    alt: "Forest trail",
+    src: "/images/tech-consulting.jpg",
+    alt: "IT Consulting",
     position: "left",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?q=80&w=1000",
-    alt: "Mountain peak",
+    src: "/images/tech-support.jpg",
+    alt: "Technical Support",
     position: "left",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1000",
-    alt: "Alpine landscape",
+    src: "/images/tech-innovation.jpg",
+    alt: "Innovation Lab",
     position: "right",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1000",
-    alt: "Snow mountain",
+    src: "/images/tech-network.jpg",
+    alt: "Network Infrastructure",
     position: "right",
     span: 1,
   },
@@ -91,7 +91,7 @@ export function TechnologySection() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [textProgress, setTextProgress] = useState(0);
   
-  const descriptionText = "Experience outdoor gear reimagined with cutting-edge technology. Alpine & Forest accessories combine ultra-lightweight materials, intelligent temperature control, and weather-resistant engineering to elevate every adventure. From mountain peaks to forest trails, your gear adapts to the conditions.";
+  const descriptionText = "Transform your business with cutting-edge IT infrastructure. Our enterprise solutions combine robust hardware systems, custom software development, and cloud-native architecture to deliver scalable, secure, and high-performance technology ecosystems. From data centers to end-user applications, we engineer solutions that drive digital transformation.";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -144,11 +144,8 @@ export function TechnologySection() {
   const borderRadius = imageProgress * 24; // 0px to 24px
   const gap = imageProgress * 16; // 0px to 16px
 
-  // Calculate grayscale for text section based on textProgress
-  const grayscaleAmount = Math.round((1 - textProgress) * 100);
-
   return (
-    <section ref={sectionRef} className="relative bg-foreground">
+    <section ref={sectionRef} className="relative bg-card">
       {/* Sticky container for scroll animation */}
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="flex h-full w-full items-center justify-center">
@@ -198,21 +195,21 @@ export function TechnologySection() {
               }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=2000"
-                alt="Aerial view of camping expedition in wilderness"
+                src="/images/tech-datacenter.jpg"
+                alt="Enterprise data center infrastructure"
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-foreground/40" />
+              <div className="absolute inset-0 bg-background/50" />
               
               {/* Title Text - Fades out word by word with blur */}
               <div 
                 className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
               >
-                <h2 className="max-w-3xl font-medium leading-tight tracking-tight text-white md:text-5xl lg:text-7xl text-5xl">
-                  {["Technology", "Meets", "Wilderness."].map((word, index) => {
+                <h2 className="max-w-3xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-7xl text-5xl">
+                  {["Innovation", "Meets", "Enterprise."].map((word, index) => {
                     // Each word fades out sequentially based on scrollProgress
-                    const wordFadeStart = index * 0.07; // Technology: 0, Meets: 0.07, Wilderness: 0.14
+                    const wordFadeStart = index * 0.07; // Innovation: 0, Meets: 0.07, Enterprise: 0.14
                     const wordFadeEnd = wordFadeStart + 0.07;
                     const wordProgress = Math.max(0, Math.min(1, (scrollProgress - wordFadeStart) / (wordFadeEnd - wordFadeStart)));
                     const wordOpacity = 1 - wordProgress;
@@ -279,9 +276,6 @@ export function TechnologySection() {
         ref={textSectionRef}
         className="relative overflow-hidden bg-background px-6 py-24 md:px-12 md:py-32 lg:px-20 lg:py-40"
       >
-        {/* Background Image with Grayscale Filter */}
-        
-
         {/* Text Content */}
         <div className="relative z-10 mx-auto max-w-4xl">
           <ScrollRevealText text={descriptionText} />

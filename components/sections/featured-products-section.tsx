@@ -4,34 +4,34 @@ import { FadeImage } from "@/components/fade-image";
 
 const features = [
   {
-    title: "Smart Temperature Control",
-    description: "Innovation",
-    image: "/images/d18fe616-5596-4559-90f5-a90f5397d0d8.png",
+    title: "Cloud Infrastructure",
+    description: "Scalability",
+    image: "/images/tech-cloud.jpg",
   },
   {
-    title: "Ultra-Light Carbon Frame",
-    description: "Performance",
-    image: "/images/e26fa9c3-966d-4966-94a4-954a1e511c1c.png",
+    title: "Cybersecurity Solutions",
+    description: "Protection",
+    image: "/images/tech-security.jpg",
   },
   {
-    title: "Weather-Resistant Design",
-    description: "Durability",
-    image: "/images/car.jpg",
+    title: "Data Center Services",
+    description: "Infrastructure",
+    image: "/images/tech-datacenter.jpg",
   },
   {
-    title: "Integrated GPS Tracking",
-    description: "Navigation",
-    image: "/images/204cee22-9e85-49e8-9303-1d309af626b0.png",
+    title: "AI & Machine Learning",
+    description: "Intelligence",
+    image: "/images/tech-ai.jpg",
   },
   {
-    title: "Built-In LED Flashlight",
-    description: "Visibility",
-    image: "/images/led-flashlight-bottle.png",
+    title: "Network Architecture",
+    description: "Connectivity",
+    image: "/images/tech-network.jpg",
   },
   {
-    title: "Self-Heating Technology",
-    description: "Comfort",
-    image: "/images/heating-campfire.png",
+    title: "System Integration",
+    description: "Unification",
+    image: "/images/tech-integration.jpg",
   },
 ];
 
@@ -40,13 +40,13 @@ export function FeaturedProductsSection() {
     <section id="technology" className="bg-background">
       {/* Section Title */}
       <div className="px-6 py-20 text-center md:px-12 md:py-28 lg:px-20 lg:py-32 lg:pb-20">
-        <h2 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl lg:text-5xl">
-          Engineered for Excellence.
+        <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
+          Technology That Drives
           <br />
-          Designed for Adventure.
+          <span className="text-primary">Business Forward.</span>
         </h2>
         <p className="mx-auto mt-6 max-w-md text-sm text-muted-foreground">
-          Technology
+          Our Capabilities
         </p>
       </div>
 
@@ -55,18 +55,19 @@ export function FeaturedProductsSection() {
         {features.map((feature) => (
           <div key={feature.title} className="group">
             {/* Image */}
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
               <FadeImage
                 src={feature.image || "/placeholder.svg"}
                 alt={feature.title}
                 fill
                 className="object-cover group-hover:scale-105"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
             </div>
 
             {/* Content */}
             <div className="py-6">
-              <p className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
+              <p className="mb-2 text-xs uppercase tracking-widest text-primary">
                 {feature.description}
               </p>
               <h3 className="text-foreground text-xl font-semibold">

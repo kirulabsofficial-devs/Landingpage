@@ -12,14 +12,14 @@ export function GallerySection() {
   const lastScrollRef = useRef(0);
 
   const images = [
-    { src: "/images/bottle-bike.png", alt: "Thermal bottle on bike" },
-    { src: "/images/bottle-lake.png", alt: "Thermal bottle by lake" },
-    { src: "/images/bottle-water.png", alt: "Thermal bottle in water" },
-    { src: "/images/bottle-stream.png", alt: "Thermal bottle by stream" },
-    { src: "/images/bottle-fire.png", alt: "Thermal bottle by fire" },
-    { src: "/images/bottle-snow.png", alt: "Thermal bottle in snow" },
-    { src: "/images/bottle-mountain.png", alt: "Thermal bottle on mountain" },
-    { src: "/images/bottle-canyon.png", alt: "Thermal bottle at canyon" },
+    { src: "/images/tech-datacenter.jpg", alt: "Data center infrastructure" },
+    { src: "/images/tech-cloud.jpg", alt: "Cloud computing solutions" },
+    { src: "/images/tech-security.jpg", alt: "Cybersecurity systems" },
+    { src: "/images/tech-network.jpg", alt: "Network architecture" },
+    { src: "/images/tech-ai.jpg", alt: "AI and machine learning" },
+    { src: "/images/tech-software.jpg", alt: "Software development" },
+    { src: "/images/tech-hardware.jpg", alt: "Enterprise hardware" },
+    { src: "/images/tech-innovation.jpg", alt: "Technology innovation" },
   ];
 
   // Calculate section height based on content width
@@ -114,7 +114,7 @@ export function GallerySection() {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="relative h-[70vh] w-[85vw] flex-shrink-0 overflow-hidden rounded-2xl md:w-[60vw] lg:w-[45vw]"
+                className="relative h-[70vh] w-[85vw] flex-shrink-0 overflow-hidden rounded-2xl md:w-[60vw] lg:w-[45vw] border border-border"
                 style={{
                   transform: 'translateZ(0)',
                   WebkitTransform: 'translateZ(0)',
@@ -127,6 +127,12 @@ export function GallerySection() {
                   className="object-cover"
                   priority={index < 3}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
+                <div className="absolute bottom-6 left-6">
+                  <span className="text-sm font-medium text-foreground bg-card/80 backdrop-blur-sm px-3 py-1.5 rounded-full border border-border">
+                    {image.alt}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
