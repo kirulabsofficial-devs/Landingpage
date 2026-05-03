@@ -4,24 +4,30 @@ import Link from "next/link";
 
 const footerLinks = {
   solutions: [
-    { label: "Hardware Solutions", href: "#solutions" },
-    { label: "Software Development", href: "#solutions" },
-    { label: "Cloud Services", href: "#technology" },
-    { label: "Cybersecurity", href: "#technology" },
+    { label: "Hardware Solutions", href: "/#solutions" },
+    { label: "Software Development", href: "/#solutions" },
+    { label: "Cloud Services", href: "/#technology" },
+    { label: "Cybersecurity", href: "/#technology" },
   ],
   company: [
-    { label: "About Us", href: "#about" },
-    { label: "Our Team", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Contact", href: "#contact" },
+    { label: "About Us", href: "/#about" },
+    { label: "Our Team", href: "/team" },
+    { label: "Projects", href: "/projects" },
+    { label: "Contact", href: "/contact" },
   ],
   resources: [
-    { label: "Documentation", href: "#" },
-    { label: "Case Studies", href: "#" },
-    { label: "Blog", href: "#" },
-    { label: "Support", href: "#" },
+    { label: "Consultation", href: "/consultation" },
+    { label: "Case Studies", href: "/projects" },
+    { label: "Support", href: "/contact" },
+    { label: "Careers", href: "/team" },
   ],
 };
+
+const socialLinks = [
+  { label: "LinkedIn", href: "https://linkedin.com/company/kirulabs" },
+  { label: "Twitter", href: "https://twitter.com/kirulabs" },
+  { label: "GitHub", href: "https://github.com/kirulabs" },
+];
 
 export function FooterSection() {
   return (
@@ -38,6 +44,20 @@ export function FooterSection() {
               Enterprise IT solutions delivering cutting-edge hardware and software services. 
               Powering digital transformation for modern businesses.
             </p>
+            <div className="mt-6 space-y-2">
+              <a 
+                href="mailto:kirulabsofficial@gmail.com" 
+                className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                kirulabsofficial@gmail.com
+              </a>
+              <a 
+                href="tel:+233595407871" 
+                className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                +233 59 540 7871
+              </a>
+            </div>
           </div>
 
           {/* Solutions */}
@@ -102,24 +122,17 @@ export function FooterSection() {
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
-            <Link
-              href="#"
-              className="text-xs text-muted-foreground transition-colors hover:text-primary"
-            >
-              LinkedIn
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-muted-foreground transition-colors hover:text-primary"
-            >
-              Twitter
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-muted-foreground transition-colors hover:text-primary"
-            >
-              GitHub
-            </Link>
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-muted-foreground transition-colors hover:text-primary"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ export function TestimonialsSection() {
       {/* Large Text Statement */}
       <div className="px-6 py-24 md:px-12 md:py-32 lg:px-20 lg:py-40">
         <p className="mx-auto max-w-5xl text-2xl leading-relaxed text-foreground md:text-3xl lg:text-[2.5rem] lg:leading-snug">
-          At <span className="text-primary font-semibold">Nexus Tech</span>, we combine enterprise-grade infrastructure 
+          At <span className="text-primary font-semibold">KiruLabs</span>, we combine enterprise-grade infrastructure 
           with innovative software solutions — empowering businesses to scale, secure their assets, and 
           lead in the digital economy.
         </p>
