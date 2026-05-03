@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const stats = [
   { label: "Projects Delivered", value: "500+" },
@@ -46,9 +47,9 @@ export function EditorialSection() {
             <p className="mt-4 text-muted-foreground text-lg">
               Contact us for a free consultation and discover how our IT solutions can accelerate your digital journey.
             </p>
-            <button className="mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity">
+            <Link href="/consultation" className="inline-block mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity">
               Schedule a Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </div>

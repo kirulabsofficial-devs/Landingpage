@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Users, Building2, MessageSquare } from "lucide-react";
+import { Menu, X, ChevronDown, Users, Building2, MessageSquare, FolderKanban } from "lucide-react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -90,6 +90,17 @@ export function Header() {
                     </div>
                   </Link>
                   <Link
+                    href="/projects"
+                    onClick={() => setIsAboutOpen(false)}
+                    className="flex items-center gap-3 px-4 py-3 text-sm text-foreground hover:bg-secondary transition-colors"
+                  >
+                    <FolderKanban size={18} className="text-primary" />
+                    <div>
+                      <div className="font-medium">Projects</div>
+                      <div className="text-xs text-muted-foreground">Our portfolio</div>
+                    </div>
+                  </Link>
+                  <Link
                     href="/#about"
                     onClick={() => setIsAboutOpen(false)}
                     className="flex items-center gap-3 px-4 py-3 text-sm text-foreground hover:bg-secondary transition-colors"
@@ -101,7 +112,7 @@ export function Header() {
                     </div>
                   </Link>
                   <Link
-                    href="/#contact"
+                    href="/contact"
                     onClick={() => setIsAboutOpen(false)}
                     className="flex items-center gap-3 px-4 py-3 text-sm text-foreground hover:bg-secondary transition-colors"
                   >
@@ -120,7 +131,7 @@ export function Header() {
         {/* CTA */}
         <div className="hidden items-center gap-6 md:flex">
           <Link
-            href="/#contact"
+            href="/consultation"
             className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${isScrolled ? "bg-primary text-primary-foreground hover:opacity-80" : "bg-primary text-primary-foreground hover:bg-primary/90"}`}
           >
             Get a Consultation
@@ -177,6 +188,14 @@ export function Header() {
                   Our Team
                 </Link>
                 <Link
+                  href="/projects"
+                  className="flex items-center gap-3 text-foreground"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <FolderKanban size={18} className="text-primary" />
+                  Projects
+                </Link>
+                <Link
                   href="/#about"
                   className="flex items-center gap-3 text-foreground"
                   onClick={() => setIsMenuOpen(false)}
@@ -185,7 +204,7 @@ export function Header() {
                   Company
                 </Link>
                 <Link
-                  href="/#contact"
+                  href="/contact"
                   className="flex items-center gap-3 text-foreground"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -196,7 +215,7 @@ export function Header() {
             </div>
             
             <Link
-              href="/#contact"
+              href="/consultation"
               className="mt-4 bg-primary px-5 py-3 text-center text-sm font-medium text-primary-foreground rounded-full"
               onClick={() => setIsMenuOpen(false)}
             >
