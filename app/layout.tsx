@@ -7,7 +7,7 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'NEXUS TECH | IT Solutions',
+  title: 'KiruLabs | IT Solutions',
   description: 'Enterprise IT solutions delivering cutting-edge hardware and software services. Cloud infrastructure, cybersecurity, and digital transformation.',
   generator: 'v0.app',
   icons: {

@@ -32,7 +32,7 @@ export function FooterSection() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 lg:col-span-2">
             <Link href="/" className="text-lg font-bold text-foreground">
-              <span className="text-primary">NEXUS</span> TECH
+              Kiru<span className="text-primary">Labs</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Enterprise IT solutions delivering cutting-edge hardware and software services. 
@@ -97,7 +97,7 @@ export function FooterSection() {
       <div className="border-t border-border px-6 py-6 md:px-12 lg:px-20">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-xs text-muted-foreground">
-            2026 Nexus Tech. All rights reserved.
+            2026 KiruLabs. All rights reserved.
           </p>
 
           {/* Social Links */}

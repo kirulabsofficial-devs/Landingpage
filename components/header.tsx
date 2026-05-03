@@ -24,7 +24,7 @@ export function Header() {
       <div className="flex items-center justify-between transition-all duration-300 px-2 pl-5 py-2">
         {/* Logo */}
         <Link href="#" className={`text-lg font-bold tracking-tight transition-colors duration-300 ${isScrolled ? "text-foreground" : "text-white"}`}>
-          <span className="text-primary">NEXUS</span> TECH
+          Kiru<span className="text-primary">Labs</span>
         </Link>
 
         {/* Desktop Navigation */}
