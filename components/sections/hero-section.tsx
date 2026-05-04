@@ -126,7 +126,7 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="/images/kiru-logo.svg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Adobe%20Express%20-%20file-xGDvaVJ3tpk6PJpSPfLSyoHplBT451.png"
                 alt="KiruLabs logo"
                 width={300}
                 height={300}
@@ -139,7 +139,7 @@ export function HeroSection() {
                 className="absolute inset-0 flex items-end overflow-hidden"
                 style={{ opacity: textOpacity }}
               >
-                <h1 className="w-full text-[22vw] font-bold leading-[0.8] tracking-tighter text-foreground">
+                <h1 className="w-full text-[22vw] font-bold leading-[0.8] tracking-tighter text-white">
                   {word.split("").map((letter, index) => (
                     <span
                       key={index}
