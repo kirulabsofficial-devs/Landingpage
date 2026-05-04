@@ -117,7 +117,7 @@ export function HeroSection() {
 
             {/* Main Hero Image - Center */}
             <div 
-              className="relative overflow-hidden will-change-transform"
+              className="relative overflow-hidden will-change-transform flex items-center justify-center bg-black"
               style={{
                 width: `${centerWidth}%`,
                 height: `${centerHeight}%`,
@@ -126,15 +126,13 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="/images/tech-hero.jpg"
-                alt="Enterprise technology infrastructure"
-                fill
-                className="object-cover"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Adobe%20Express%20-%20file-xGDvaVJ3tpk6PJpSPfLSyoHplBT451.png"
+                alt="KiruLabs logo"
+                width={300}
+                height={300}
+                className="w-1/2 h-auto object-contain"
                 priority
               />
-              
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
               
               {/* Overlay Text - Fades out first */}
               <div 
