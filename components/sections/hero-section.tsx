@@ -117,7 +117,7 @@ export function HeroSection() {
 
             {/* Main Hero Image - Center */}
             <div 
-              className="relative overflow-hidden will-change-transform flex items-center justify-center bg-background"
+              className="relative overflow-hidden will-change-transform flex items-center justify-center bg-black"
               style={{
                 width: `${centerWidth}%`,
                 height: `${centerHeight}%`,
