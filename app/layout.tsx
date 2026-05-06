@@ -7,7 +7,7 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'KiruLabs | IT Solutions',
+  title: 'KiruLabs | Business Solutions',
   description: 'Transform your business with cutting-edge technology and innovative solutions from Kirulabs.',
   generator: 'v0.app',
   icons: {
