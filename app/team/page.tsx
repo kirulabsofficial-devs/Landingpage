@@ -1,19 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Linkedin, Twitter, Mail } from "lucide-react";
+import { ArrowLeft, Github, Linkedin, Mail } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "James Mitchell",
+    name: "Selasi Dzeamesi",
     role: "Chief Executive Officer",
-    bio: "With over 20 years of experience in the tech industry, James leads KiruLabs with a vision for innovation and excellence in IT solutions.",
-    image: "/images/team/ceo.jpg",
-    linkedin: "#",
-    twitter: "#",
-    email: "james@kirulabs.com",
+    bio: "As a visionary leader in tech innovation, Selasi drives Kirulabs' mission to become a leading tech company.",
+    image: "/ceo1.jpg",
+    linkedin: "https://www.linkedin.com/in/selasi-dzeamesi-818206251/",
+    Github: "#",
+    email: "selasidzeamesi82@gmail.com",
   },
   {
-    name: "David Chen",
+    name: "David Mends",
     role: "Chief Technology Officer",
     bio: "David oversees all technical operations and drives our R&D initiatives. His expertise spans cloud architecture, AI, and enterprise systems.",
     image: "/images/team/cto.jpg",
@@ -22,17 +22,17 @@ const teamMembers = [
     email: "david@kirulabs.com",
   },
   {
-    name: "Sarah Williams",
-    role: "Chief Operations Officer",
+    name: "Deborah Narh",
+    role: "Brand Ambassador and Social Media Manager",
     bio: "Sarah ensures seamless delivery of our services and maintains the highest standards of operational excellence across all projects.",
-    image: "/images/team/coo.jpg",
+    image: "remikiru.jpg",
     linkedin: "#",
     twitter: "#",
     email: "sarah@kirulabs.com",
   },
   {
-    name: "Michael Torres",
-    role: "Lead Software Developer",
+    name: "Paa Joe",
+    role: "Lead Cloud Engineer",
     bio: "Michael leads our development team, specializing in full-stack development and creating scalable software solutions for enterprise clients.",
     image: "/images/team/lead-developer.jpg",
     linkedin: "#",
@@ -40,10 +40,10 @@ const teamMembers = [
     email: "michael@kirulabs.com",
   },
   {
-    name: "Emily Parker",
+    name: "Regina Kumah",
     role: "UX/UI Design Lead",
     bio: "Emily brings creativity and user-centered design thinking to every project, ensuring our solutions are both beautiful and functional.",
-    image: "/images/team/designer.jpg",
+    image: "/Regina1.jpg",
     linkedin: "#",
     twitter: "#",
     email: "emily@kirulabs.com",
