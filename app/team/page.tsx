@@ -137,11 +137,11 @@ export default function TeamPage() {
                       <Linkedin size={16} />
                     </a>
                     <a
-                      href={member.twitter}
+                      href={member.Github}
                       className="p-2 rounded-full bg-secondary text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
-                      aria-label={`${member.name}'s Twitter`}
+                      aria-label={`${member.name}'s Github`}
                     >
-                      <Twitter size={16} />
+                      <Github size={16} />
                     </a>
                     <a
                       href={`mailto:${member.email}`}
