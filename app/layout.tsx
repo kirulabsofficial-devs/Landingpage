@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: 'KiruLabs | IT Solutions',
-  description: 'Enterprise IT solutions delivering cutting-edge hardware and software services. Cloud infrastructure, cybersecurity, and digital transformation.',
+  description: 'Transform your business with cutting-edge technology and innovative solutions from Kirulabs.',
   generator: 'v0.app',
   icons: {
     icon: [

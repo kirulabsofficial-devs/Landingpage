@@ -302,7 +302,7 @@ export default function ConsultationPage() {
       <footer className="py-8 px-6 border-t border-border mt-12">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            2026 KiruLabs. All rights reserved.
+            2024 KiruLabs. All rights reserved.
           </p>
           <Link
             href="/contact"
