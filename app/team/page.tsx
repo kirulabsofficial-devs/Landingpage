@@ -51,7 +51,7 @@ const teamMembers = [
   {
     name: "Emmanuel Billa",
     role: "Chief Brand Ambassagor and HR",
-    bio: "Robert manages our cloud infrastructure and ensures 99.9% uptime for all client systems with robust security implementations.",
+    bio: "Emmanuel leads brand representation and manages talent, building strong relationships, growing our network, and supporting team development.",
     image: "emmab.jpg",
     linkedin: "#",
     Github: "#",

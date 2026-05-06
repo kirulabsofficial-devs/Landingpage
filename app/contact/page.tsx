@@ -292,21 +292,35 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Section Placeholder */}
-      <section className="py-12 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="relative h-[400px] bg-card border border-border rounded-2xl overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                <p className="text-xl font-semibold text-foreground mb-2">KiruLabs Headquarters</p>
-                <p className="text-muted-foreground">Accra, Ghana</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Map */}
+<div className="p-20 rounded-xl bg-secondary">
+  <p className="text-xl font-bold text-foreground mb-3">Visit Us</p>
+
+  <div className="w-full h-[250px] rounded-xl overflow-hidden">
+    <iframe
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      loading="lazy"
+      allowFullScreen
+      referrerPolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=5.6337063,-0.2565299&z=15&output=embed"
+    ></iframe>
+  </div>
+
+  <p className="text-sm text-muted-foreground mt-3">
+    Available for on-site consultations
+  </p>
+
+  <a
+    href="https://www.google.com/maps?q=5.6337063,-0.2565299"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-primary text-sm mt-2 inline-block"
+  >
+    Open in Google Maps →
+  </a>
+</div>
 
       {/* CTA */}
       <section className="py-16 px-6">
@@ -332,7 +346,7 @@ export default function ContactPage() {
       <footer className="py-8 px-6 border-t border-border">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            2026 KiruLabs. All rights reserved.
+            2024 KiruLabs. All rights reserved.
           </p>
           <Link
             href="/"
