@@ -57,6 +57,24 @@ const teamMembers = [
     Github: "#",
     email: "robert@kirulabs.com",
   },
+  {
+    name: "Isabel Anane",
+    role: "Brand Ambassador and Quality Assurance Officer",
+    bio: "Isabel engages with customers to build brand awareness and loyalty, monitor performance and quality, identify issues, and help improve customer satisfaction and overall business standards.",
+    image: "kiruisa.jpg",
+    linkedin: "#",
+    Github: "#",
+    email: "isabel@kirulabs.com",
+  },
+  {
+    name: "Odo Nyamekye(Donzy)",
+    role: "Social Media Marketer",
+    bio: "Donzy plans marketing campaigns, analyze performance metrics, run advertisements, and develop strategies to grow followers, boost engagement, and drive sales or brand awareness.",
+    image: "donzy.jpg",
+    linkedin: "#",
+    Github: "#",
+    email: "isabel@kirulabs.com",
+  }
 ];
 
 export default function TeamPage() {
@@ -105,14 +123,14 @@ export default function TeamPage() {
                 className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300"
               >
                 {/* Image */}
-                <div className="relative aspect-[4/5] overflow-hidden">
+                <div className="relative aspect-4/5 overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-card via-transparent to-transparent" />
                 </div>
 
                 {/* Content */}
