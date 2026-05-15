@@ -116,17 +116,20 @@ export function HeroSection() {
             </div>
 
             {/* Main Hero Image - Center */}
-            <div 
-              className="relative overflow-hidden will-change-transform flex items-center justify-center"
+            <div
+              className="relative overflow-hidden will-change-transform flex items-center justify-center shrink-0"
               style={{
                 width: `${centerWidth}%`,
                 height: `${centerHeight}%`,
+                minWidth: `${centerWidth}%`,
+                minHeight: `${centerHeight}%`,
                 flex: "0 0 auto",
                 borderRadius: `${borderRadius}px`,
                 backgroundImage: "url('/happyrem.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
+                aspectRatio: "16 / 9", // optional but helps lock layout
               }}
             >
               <Image
